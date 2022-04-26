@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Snap</title>
+</head>
+<body>
+<nav>
+    <img src="./images/logo.svg" alt="snap logo">
+<!--    <div class="nav-routes">-->
+    <div class="container-menu">
+        <button class="mobile-menu-button">
+<!--            <img src="./images/icon-menu.svg" alt="open menu button">-->
+        </button>
+        <section class="nav-routes">
+            <div class="nav-primary">
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <span>Features</span>
+                        <div class="dropdown-icon"></div>
+                    </button>
+                    <div class="dropdown-content features">
+                        <a class="dropdown-item" href="#">
+                            <img src="./images/icon-todo.svg" alt="list of things todo">
+                            <p>Todo List</p>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="./images/icon-calendar.svg" alt="calendar with marks">
+                            <p>Calendar</p>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="./images/icon-reminders.svg" alt="bell flat icon">
+                            <p>Remainders</p>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="./images/icon-planning.svg" alt="purple timer">
+                            <p>Planning</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <span>Company</span>
+                        <div class="dropdown-icon"></div>
+                    </button>
+                    <div class="dropdown-content company">
+                        <a class="dropdown-item spacing" href="#">History</a>
+                        <a class="dropdown-item spacing" href="#">Our Team</a>
+                        <a class="dropdown-item spacing" href="#">Blog</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="#">Careers</a>
+                <a class="nav-link" href="#">About</a>
+            </div>
+            <div class="nav-btn-group">
+                <a class="nav-link outline" href="#">Login</a>
+                <a class="nav-link outline" href="#">Register</a>
+            </div>
+        </section>
+    </div>
+</nav>
+
+<main class="container">
+    <div class="container-information">
+        <h1 class="container-header">Make <span class="header-divider">remote work</span></h1>
+        <p class="container-text">Get your team in sync, no matter your location. Streamline processes, create team
+            rituals, and watch productivity soar.</p>
+        <a class="nav-link btn-black-white" href="#">Learn more</a>
+        <div class="third-party-block">
+            <img src="./images/client-databiz.svg"
+                 alt="databiz logo"/>
+            <img src="./images/client-audiophile.svg"
+                 alt="audiophille logo"/>
+            <img src="./images/client-meet.svg"
+                 alt="meet logo"/>
+            <img src="./images/client-maker.svg"
+                 alt="maker logo"/>
+        </div>
+    </div>
+    <picture class="hero-position">
+        <source srcset="./images/image-hero-mobile.png" type="image/png" media="(max-width: 767px)">
+        <img class="container-hero-image" src="./images/image-hero-desktop.png"
+             alt="Man with his digital instruments that we as Snap providing">
+    </picture>
+</main>
+
+<script src="menuToggle.js"></script>
+</body>
+</html>
