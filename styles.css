@@ -416,6 +416,12 @@ nav {
     }
     .third-party-block {
         grid-area: container-third-party;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .third-party-block > * {
+        width: clamp(2rem, 5vw + 1rem, 6rem);
+        object-fit: contain;
     }
 }
 @media screen and (min-width: 1024px) {
